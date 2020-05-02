@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
+    margin:0;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
 
 .header h1 {
     display: inline-block;
-    font-size: 48px;
+    font-size: 64px;
 }
 
 .header h1 .seo {
@@ -25,19 +25,21 @@ body {
 }
 
 .header div {
-    padding-top: 15px;
+    padding-top: 10px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .header div ul {
-    list-style-type: none;
+    list-style-type: inherit;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
 .header div ul li {
-    display: inline-block;
+    display: inline-flex;
     margin-left: 25px;
 }
 
@@ -47,7 +49,7 @@ a {
 }
 
 p {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .hero {
@@ -75,7 +77,21 @@ p {
     margin-left: 20px;
 }
 
-.benefits {
+.benefit {
+    margin-right: 20px;
+    padding: 10px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+/*
+.benefit-lead
+.benefit-brand
+.benefit-cost {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -86,11 +102,23 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
-    margin-bottom: 32px;
+*/
+
+.benefit { 
+    margin-bottom: 15px;
+    color: #ffffff; 
+}
+
+/*
+.benefit-lead,
+.benefit-brand,
+.benefit-cost
+{
+    margin-bottom: 28px;
     color: #ffffff;
 }
 
+/*
 .benefit-brand {
     margin-bottom: 32px;
     color: #ffffff;
@@ -100,28 +128,46 @@ p {
     margin-bottom: 32px;
     color: #ffffff;
 }
+*/
 
-.benefit-lead h3 {
-    margin-bottom: 10px;
+.benefit-lead h3,
+.benefit-brand h3,
+.benefit-cost h3 {
+    margin-bottom: 5px;
     text-align: center;
+    font-size: 22px;
+    padding: 15px;
 }
 
+/*
 .benefit-brand h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-
-.benefit-cost h3 {
+.benefit-cost h3
+ {
     margin-bottom: 10px;
     text-align: center;
 }
+*/
 
-.benefit-lead img {
+
+.benefit {
     display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
+    margin-left: 10px auto;
+    text-align: center;
+    }
 
+
+.benefit-lead img,
+.benefit-brand img,
+.benefit-cost img {
+    display: block;
+    margin: 5px auto;
+    max-width: 100px;
+    }
+
+    /*
 .benefit-brand img {
     display: block;
     margin: 10px auto;
@@ -134,7 +180,12 @@ p {
     max-width: 150px;
 }
 
-.search-engine-optimization {
+*/
+
+.search-engine-optimization,
+.online-reputation-management,
+.social-media-marketing {
+
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -143,6 +194,7 @@ p {
     color: #ffffff;
 }
 
+/*
 .online-reputation-management {
     margin-bottom: 20px;
     padding: 50px;
@@ -160,24 +212,32 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
+*/
 
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
+.search-engine-optimization img,
+.online-reputation-management img,
 .social-media-marketing img {
     max-height: 200px;
 }
 
-.search-engine-optimization h2 {
+/*
+.online-reputation-management img {
+    max-height: 200px;
+}
+.social-media-marketing img {
+    max-height: 200px;
+}
+
+*/
+
+.search-engine-optimization h2, 
+.online-reputation-management h2,
+.social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/*
 .online-reputation-management h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -187,6 +247,8 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
+
+*/
 
 .footer {
     padding: 30px;
